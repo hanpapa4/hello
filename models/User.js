@@ -1,6 +1,6 @@
-const moogoose = require('mongoose');
+const mongoose = require('mongoose');
 
-const userSchema = moogoose.Schema({
+const userSchema = mongoose.Schema({
     name: {
         type: String,
         maxlength: 50
@@ -31,6 +31,6 @@ const userSchema = moogoose.Schema({
     }
 })
 
-const User = mongoose.model('User', serSchema)
+const User = mongoose.model('User', userSchema)
 
 module.exports = { User}
